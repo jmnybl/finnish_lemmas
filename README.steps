@@ -1,0 +1,8 @@
+# Running omorfi guesser
+# uses: data/wordforms_counted_nolower.txt --> word list counted from parsebank
+# produces: data/wordforms.guessed.txt.gz
+
+./guess.sh
+
+
+
