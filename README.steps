@@ -5,4 +5,8 @@
 ./guess.sh
 
 
+# Annotating/filtering guesser output --> append word counts, and remove candidate lemmas if it does not exist as a word in parsebank
+# uses: data/wordforms_counted_nolower.txt, data/wordforms.guessed.txt.gz
+# produces: wordforms.guessed.annotated.txt.gz
 
+zcat wordforms.guessed.txt.gz | python3 annotate_guesses.py | gzip -c > wordforms.guessed.annotated.txt.gz
